@@ -1,4 +1,4 @@
-# ECSC 2022
+# ECSC 2022 Poland Qualifications
 
 `C:\Users\Jakub\Documents\projects\ctf\cert22`
 `$PROJECTS/ctf/cert22`
