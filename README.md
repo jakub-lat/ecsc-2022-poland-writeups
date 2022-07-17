@@ -6,6 +6,7 @@
 
 ## Kolska leaks
 W `https://kolska-leaks.ecsc22.hack.cert.pl/download?filename=` widać path traversal
+
 Wysatrczy pobrać kod aplikacji: /`download?filename=app.py`
 
 Jest w nim zawarty secret key sesji
