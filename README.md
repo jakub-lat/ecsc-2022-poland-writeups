@@ -580,9 +580,3 @@ flag = (d[221] * pow(g, -221, p)) % p
 print(long_to_bytes(flag))
 
 ```
-
-
-todo:  
-1. Heroes of Pwn & Assembly
-3. Into the wired
-5. Suscall
