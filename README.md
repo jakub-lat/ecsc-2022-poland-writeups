@@ -9,18 +9,18 @@ W `https://kolska-leaks.ecsc22.hack.cert.pl/download?filename=` widać path trav
 Wysatrczy pobrać kod aplikacji: /`download?filename=app.py`
 
 Jest w nim zawarty secret key sesji
-![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220715232420.png.png)
+![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220715232420.png)
 
 Rozwiązanie: wystarczy stworzyć lokalną aplikację we flasku z tym samym sekretem sesji, wejść przez przeglądarkę i przekopiować ciasteczko
 
 
 ## Cat blag
 Hint:
-![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220715232559.png.png)
+![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220715232559.png)
 Przy użyciu https://github.com/arthaud/git-dumper można pobrać kod źródłowy strony
 
 w index.php znajduje się podatność sql injection:
-![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220715232700.png.png)
+![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220715232700.png)
 
 Payload:
 ```sql
@@ -38,7 +38,7 @@ Podatność XSS w swaggerze
 https://www.vidocsecurity.com/blog/hacking-swagger-ui-from-xss-to-account-takeovers/
 
 Wersja swaggera w https://szwagier.ecsc22.hack.cert.pl/static/swagger/swagger-ui-bundle.js:
-![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220716014428.png.png)
+![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220716014428.png)
 
 ```yml
 swagger: '2.0'
@@ -225,7 +225,7 @@ hbctool dasm index.android.bundle hbc_out
 Modyfikacja:
 Lista OPCode'ów hermesa: https://github.com/facebook/hermes/blob/41752c6589227694ae3a96a34e932c74c9ce3699/include/hermes/BCGen/HBC/BytecodeList.def
 
-![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220715225621.png.png)
+![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220715225621.png)
 Trzeba zmienić JmpTrue na JmpFalse w funkcji buy
 
 
@@ -245,7 +245,7 @@ Kod sprawdza flagę z dużą ilością dzikich funkcji, trzeba go odwrócić że
 Rozwiązanie:
 1. Wyeksportować kod programu przez Ghidrę
 2. Oczyścić kod
-	- zamienić undefined8 na long long, pozbyć się niepotrzebnych funkcji, zmienić main na ![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220716111938.png.png)
+	- zamienić undefined8 na long long, pozbyć się niepotrzebnych funkcji, zmienić main na ![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220716111938.png)
 3. Skompilować ponownie używając `gcc -O3 -o res code.c`
 4. Skrypt do rozwiązania:
 5.
@@ -345,7 +345,7 @@ plt.imsave('out/program.png', res, cmap='gray')
 ```
 
 Potem trzeba nałożyć wszystkie obrazki na siebie i ustawić tryb na Dodawanie:
-![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220716120944.png.png)
+![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220716120944.png)
 
 
 ## SEALed communication
@@ -393,13 +393,13 @@ Flaga: `ecsc{kasprowywierch}`
 
 Kod aplikacji (z jadxgui):
 Wysyła request z id i sygnaturą
-![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220716203200.png.png)
+![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220716203200.png)
 
 Ładowanie klucza Ed25519 (R.raw.key):
-![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220716203223.png.png)
+![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220716203223.png)
 
 Klucz można znaleźć w zasobach:
-![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220716203309.png.png)
+![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220716203309.png)
 
 Należy podpisać input `flag` i przekonwertować go na array z sygnaturą
 
@@ -444,7 +444,7 @@ cargo run --bin quiche-client -- --no-verify "$url" -H "$header" $1;
 ## Looking at sound
 Rozwiązanie: Użycie pluginu NUGEN VIsualiser2 w Waveform i odczytanie flagi z Phase Inspector
 
-![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220717113348.png.png)
+![image](https://raw.githubusercontent.com/piratehacker/ecsc-2022-poland-wrietups/master/images/Pasted%20image%2020220717113348.png)
 
 ## Shifting
 Trzeba odwrócić XORy żeby poznać część klucza, a następnie zrobić bruteforce na pozostałych 8 bitach klucza
