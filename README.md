@@ -1,9 +1,5 @@
 # ECSC 2022 Poland Qualifications
 
-`C:\Users\Jakub\Documents\projects\ctf\cert22`
-`$PROJECTS/ctf/cert22`
-
-
 ## Kolska leaks
 W `https://kolska-leaks.ecsc22.hack.cert.pl/download?filename=` widać path traversal
 
